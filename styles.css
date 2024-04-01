@@ -100,6 +100,8 @@ body {
     background-color: whitesmoke;
     overflow: hidden;
     width: 100%;
+    position: relative;
+
   }
 
 
@@ -111,7 +113,6 @@ body {
     text-decoration: none;
     padding: 14px 16px;
     /* padding-right: 50px; */
-    float: right;
   }
 
   .topnav img {
@@ -127,21 +128,53 @@ body {
     font-weight: bold;
   }
 
-  .topnav a.active {
-    border: 2px solid black;
+  #myLinks a:active {
+    border: 2px solid whitesmoke;
+    border-radius: 5px;
+    /* padding: 10px; */
   }
 
 
   .topnav .icon {
     display: none;
+
   }
+
+  #menu{
+    float: right;
+
+  }
+
+  .topnav #myLinks {
+    display: none;
+  }
+
+  .left h1 {
+    text-align: center;
+    font-size: 45px;
+    font-weight: lighter;
+    padding:0px 10px 0px 10px;
+    
+    margin: 0;
+    /* float: left; */
+    font-family: "DM Serif Display";
+}
+
+.white-block h1 {
+  text-align: center;
+  font-size: 35px;
+  font-weight: lighter;
+  /* margin: 0; */
+  /* float: left; */
+  font-family: "DM Serif Display";
+}
 
 
   h1 {
     text-align: center;
-    font-size: 45px;
+    font-size: 35px;
     font-weight: lighter;
-    padding: 0;
+    padding-bottom: 40px;
     margin: 0;
     /* float: left; */
     font-family: "DM Serif Display";
@@ -167,7 +200,7 @@ body {
     /* float: left; */
     /* padding: 2%; */
     text-align: left;
-    padding: 80px 20px;
+    padding: 110px 20px 160px 20px;
     height: auto;
 
     background-image: url('images/bg-pattern-intro-left-mobile.svg');
@@ -185,7 +218,7 @@ body {
   .image{
     display: block;
 	left: 83%;
-	top: 150%;
+	top: 160%;
 	transform: translate(-50%, -50%);
 	position: absolute;
 
@@ -198,8 +231,9 @@ body {
         text-indent: initial;
         text-align: center;
         font-family: "Karla", sans-serif;
-        color: hsl(273, 4%, 51%);
-        padding: 10px 10px;
+        color:  hsl(0, 6%, 91%);
+        padding: 5px 10px 20px 10px;
+        line-height: 150%;
     
   }
 
@@ -218,7 +252,7 @@ body {
     font-size: medium;
     background-color: hsl(0, 0%, 98%);
     padding: 25px;
-    padding-top: 150px;
+    padding-top: 120px;
     padding-bottom: 150px;
     font-family: "DM Serif Display";
     font-weight: normal;
@@ -245,8 +279,13 @@ body {
     background-color: hsl(256, 26%, 20%);
     color: hsl(0, 0%, 98%);
     margin-top: 100px;
-    padding: 20px;
+    padding: 50px;
     /* padding-top: 50px; */
+    height: 350px;
+
+    background-image: url('images/bg-pattern-how-we-work-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: right top;
   }
 
   .section{
@@ -287,6 +326,12 @@ body {
   #heading{
     color: hsl(258, 4%, 51%);
     font-weight: bold;
-    padding: 10px;
+    /* padding: 0px; */
 
+  }
+
+  .links{
+    padding: 10px 10px 20px 10px;
+    height: auto;
+    line-height: 15px;
   }
